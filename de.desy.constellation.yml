@@ -1,6 +1,6 @@
 id: de.desy.constellation
 runtime: org.kde.Platform
-runtime-version: "6.8"
+runtime-version: "6.9"
 sdk: org.kde.Sdk
 command: Satellite
 finish-args:
@@ -19,6 +19,7 @@ modules:
     buildsystem: meson
     config-opts:
       - -Dbuildtype=release
+      - -Db_lto=true
       - -Dimpl_py=disabled
       - -Dcxx_tools=false
       - -Dcxx_tests=disabled
@@ -27,13 +28,10 @@ modules:
       - -Dlistener_observatory=true
       - -Dsatellite_dev_null_receiver=true
       - -Dsatellite_eudaq_native_writer=true
+      - -Dsatellite_mattermost=true
       - -Dsatellite_random_transmitter=true
       - -Dsatellite_sputnik=true
-    post-install:
-      - install -D ../de.desy.constellation.metainfo.xml /app/share/metainfo/de.desy.constellation.metainfo.xml
     sources:
       - type: archive
-        url: https://gitlab.desy.de/constellation/constellation/-/releases/v0.3/downloads/Constellation-v0.3.tar.xz
-        sha256: 8d30f5c7a1203ded7768a00e58281fffc907abfd1257a50de0b533f99a56ddad
-      - type: file
-        path: de.desy.constellation.metainfo.xml
+        url: https://gitlab.desy.de/constellation/constellation/-/releases/v0.4/downloads/Constellation-v0.4.tar.xz
+        sha256: 1df0a5dde96855ed8e4272a456351bf6f041c25603ad83012edd50253769dc59
