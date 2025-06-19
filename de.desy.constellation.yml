@@ -28,10 +28,11 @@ modules:
       - -Dlistener_observatory=true
       - -Dsatellite_dev_null_receiver=true
       - -Dsatellite_eudaq_native_writer=true
+      - -Dsatellite_flight_recorder=true
       - -Dsatellite_mattermost=true
       - -Dsatellite_random_transmitter=true
       - -Dsatellite_sputnik=true
     sources:
       - type: archive
-        url: https://gitlab.desy.de/constellation/constellation/-/releases/v0.4/downloads/Constellation-v0.4.tar.xz
-        sha256: 1df0a5dde96855ed8e4272a456351bf6f041c25603ad83012edd50253769dc59
+        url: https://gitlab.desy.de/constellation/constellation/-/releases/v0.5/downloads/Constellation-v0.5.tar.xz
+        sha256: 3c5bfd57454357c08b54298bd0b6058b98c391696cc935f72eb196292afe9818
