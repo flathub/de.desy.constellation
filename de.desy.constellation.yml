@@ -34,5 +34,5 @@ modules:
       - -Dsatellite_sputnik=true
     sources:
       - type: archive
-        url: https://gitlab.desy.de/constellation/constellation/-/releases/v0.5/downloads/Constellation-v0.5.tar.xz
-        sha256: 3c5bfd57454357c08b54298bd0b6058b98c391696cc935f72eb196292afe9818
+        url: https://gitlab.desy.de/constellation/constellation/-/releases/v0.5.1/downloads/Constellation-v0.5.1.tar.xz
+        sha256: 4d67df15ee83cf24032a45695df644c7c3138d26f531dec6cacd1f7616fd0176
