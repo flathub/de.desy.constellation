@@ -1,6 +1,6 @@
 id: de.desy.constellation
 runtime: org.kde.Platform
-runtime-version: "6.9"
+runtime-version: "6.10"
 sdk: org.kde.Sdk
 command: Satellite
 finish-args:
@@ -15,18 +15,10 @@ cleanup:
   - /lib/pkgconfig
   - /share/pkgconfig
 modules:
-  - name: cpr
-    buildsystem: cmake
-    config-opts:
-      - -DCPR_USE_SYSTEM_CURL=ON
-      - -DBUILD_SHARED_LIBS=ON
-    sources:
-      - type: archive
-        url: https://github.com/libcpr/cpr/archive/refs/tags/1.12.0.tar.gz
-        sha256: f64b501de66e163d6a278fbb6a95f395ee873b7a66c905dd785eae107266a709
   - name: Constellation
     buildsystem: meson
     config-opts:
+      - -Dwerror=false
       - -Dbuildtype=release
       - -Db_lto=true
       - -Dcxx_tools=false
@@ -36,5 +28,5 @@ modules:
       - -Dsatellite_random_transmitter=true
     sources:
       - type: archive
-        url: https://gitlab.desy.de/constellation/constellation/-/releases/v0.6.1/downloads/Constellation-v0.6.1.tar.xz
-        sha256: 8ba45075d0fd823c5950b044f24413b8f02d56d6ce8b5f67ad11f81fe5488e82
+        url: https://gitlab.desy.de/constellation/constellation/-/releases/v0.7/downloads/Constellation-v0.7.tar.xz
+        sha256: ffe7a5b0aa4afc284d5bb61640d71111a0b1e2db4444bbaab02a57b7923772c6
