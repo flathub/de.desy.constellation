@@ -15,11 +15,13 @@ cleanup:
   - /lib/pkgconfig
   - /share/pkgconfig
 modules:
+  - pypi-dependencies.json
   - name: Constellation
     buildsystem: meson
     config-opts:
-      - -Dwerror=false
+      - -Dimpl_py=enabled
       - -Dbuildtype=release
+      - -Dwerror=false
       - -Db_lto=true
       - -Dcxx_tools=false
       - -Dcxx_tests=disabled
@@ -28,5 +30,5 @@ modules:
       - -Dsatellite_random_transmitter=true
     sources:
       - type: archive
-        url: https://gitlab.desy.de/constellation/constellation/-/releases/v0.7/downloads/Constellation-v0.7.tar.xz
-        sha256: ffe7a5b0aa4afc284d5bb61640d71111a0b1e2db4444bbaab02a57b7923772c6
+        url: https://gitlab.desy.de/constellation/constellation/-/releases/v0.8/downloads/Constellation-v0.8.tar.xz
+        sha256: 5e3fab1689ae445bf5f5f470f96e19259c141ee37ae8187bea18a55b324fac1a
