@@ -13,7 +13,12 @@ finish-args:
 cleanup:
   - /include
   - /lib/pkgconfig
+  - /share/man
   - /share/pkgconfig
+  - /lib/python3.*/*/*/tests
+  - /lib/python3.*/*/*/*/tests
+  - "*.la"
+  - "*.a"
 modules:
   - pypi-dependencies.json
   - name: Constellation
