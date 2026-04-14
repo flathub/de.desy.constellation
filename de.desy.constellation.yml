@@ -30,5 +30,5 @@ modules:
       - -Dsatellite_random_transmitter=true
     sources:
       - type: archive
-        url: https://gitlab.desy.de/constellation/constellation/-/releases/v0.8/downloads/Constellation-v0.8.tar.xz
-        sha256: 5e3fab1689ae445bf5f5f470f96e19259c141ee37ae8187bea18a55b324fac1a
+        url: https://gitlab.desy.de/constellation/constellation/-/releases/v0.8.1/downloads/Constellation-v0.8.1.tar.xz
+        sha256: 3d99aa834e44bc0187b48dc2b471fcb87fd0cd26c5c6304007d78ab93e79581f
